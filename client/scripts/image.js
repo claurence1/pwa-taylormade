@@ -13,6 +13,7 @@ window.onload = function () {
 
 			const likeButton = document.createElement('button');
 			likeButton.innerHTML = '♡';
+			likeButton.classList.add("rounded-circle");
 			likeButton.classList.add("img");
 			likeButton.setAttribute("id", `${imagePath[0]}`);
 

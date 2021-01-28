@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#317EFB" />
     <link rel="apple-touch-icon" href="/assets/icons/icon192.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="manifest" href="manifest.json" />
     <script>
@@ -44,16 +45,19 @@
   </head>
 
   <body>
-    <div class="app-header">
-      <h1>Rory 2021</h1>
+  <div class="bg"></div>
+  <div class="main m-3">
+    <div class="app-header d-flex justify-content-around">
+      <button class="btn btn-info" id="install_button" type="button" value="Install">Installer l'application</button>
+      <h1 class="">PLAYER PGA 2021</h1>
     </div>
     <div class="app-info">
-      <button id="install_button" type="button" value="Install">Install</button>
       <h2 id="update-message" style="display: none">Les Têtes ont changés, recharge la page</h2>
       <p id="offline-message" style="display: none">
         Offline mode
       </p>
     </div>
-    <div id="gallery"></div>
+    <div class="m-5 p-4" id="gallery"></div>
+  </div>
   </body>
 </html>
