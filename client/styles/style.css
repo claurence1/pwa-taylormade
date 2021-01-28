@@ -33,13 +33,12 @@ body {
     max-height: 70%;
     flex-flow: row wrap;
     overflow-y: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     overflow-x: hidden;
     align-items: center;
     justify-content: space-evenly;
     background-color: #080808;
-    border: 1px solid whitesmoke;
 }
 
 #gallery::-webkit-scrollbar {

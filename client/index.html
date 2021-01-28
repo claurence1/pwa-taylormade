@@ -14,14 +14,12 @@
         navigator.serviceWorker
           .register('../sw.js' , {scope: './',})
           .then(function (reg) {
-            console.log('Registration succeeded. Scope is ' + reg.scope, reg);
             reg.onupdatefound = (event) => {
               const installingWorker = reg.installing;
               installingWorker.onstatechange = () => {
                 switch (installingWorker.state) {
                   case 'installed':
                     if (navigator.serviceWorker.controller) {
-                      console.log("update available");
                       document.getElementById('new-update-message').style.display = "block";
                     }
                     break;
@@ -30,23 +28,17 @@
             };
           })
           .catch(function (error) {
-            console.log('Registration failed with ' + error);
           });
       }
     </script>
     <script src="scripts/app.js"></script>
     <script src="assets/imgs/imageDictionary.js"></script>
     <script src="scripts/image.js"></script>
-    <script
-      async
-      src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.9/pwacompat.min.js"
-      integrity="sha384-VcI6S+HIsE80FVM1jgbd6WDFhzKYA0PecD/LcIyMQpT4fMJdijBh0I7Iblaacawc"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css"
-    />
+    <script async
+            src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.9/pwacompat.min.js"
+            integrity="sha384-VcI6S+HIsE80FVM1jgbd6WDFhzKYA0PecD/LcIyMQpT4fMJdijBh0I7Iblaacawc"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css"/>
     <script src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js"></script>
   </head>

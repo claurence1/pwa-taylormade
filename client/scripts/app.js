@@ -11,8 +11,10 @@ const urlB64ToUint8Array = (base64String) => {
     return outputArray;
 };
 
+// Clé public du server
 const vapidPublicKey = 'BNANPi8bmsrs4-wBjl_Et7dDewZWSHjYKKZuoDvZai1fvnhS282gY_PdYl38DXs4pS-FORfya5jkOs1dMkjpTHY';
 
+// Encodage de la clé
 const options = {
     applicationServerKey: urlB64ToUint8Array(vapidPublicKey),
     userVisibleOnly: true,
