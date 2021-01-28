@@ -1,7 +1,7 @@
 {
-  "name": "pwa-ynov",
+  "name": "PWA-Taylormade-PGA",
   "version": "1.0.0",
-  "description": "A sandbox repository during WebMobile class given in Ynov Toulouse Campus",
+  "description": "Affichage des meilleurs joueurs sponso Taylormade du PGA",
   "main": "sw.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JasLieb/pwa-ynov.git"
+    "url": "git+https://github.com/claurence1/pwa-taylormade.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JasLieb/pwa-ynov/issues"
+    "url": "https://github.com/claurence1/PWA-Taylormade-PGA/issues"
   },
-  "homepage": "https://github.com/JasLieb/pwa-ynov#readme",
+  "homepage": "https://github.com/claurence1/PWA-Taylormade-PGA#readme",
   "devDependencies": {
     "@webpack-cli/init": "^1.1.1",
     "copy-webpack-plugin": "^7.0.0",
