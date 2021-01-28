@@ -1,44 +1,62 @@
 window.onload = function () {
 	Promise.resolve(imagePaths).then(resImagePaths => {
-			resImagePaths.forEach((imagePath, index) => {
-				const aElement = document.createElement("a");
+		resImagePaths.forEach((imagePath, index) => {
+			const aElement = document.createElement("a");
 
-				aElement.classList.add("full");
-				aElement.classList.add("progressive");
-				aElement.classList.add("replace");
+			aElement.classList.add("full");
+			aElement.classList.add("progressive");
+			aElement.classList.add("replace");
 
-				aElement.setAttribute("href", imagePath);
+			aElement.setAttribute("href", imagePath);
 
-				const tinyImagePath = tinyImagesPaths.filter(
-					tinyPath => {
-						const splittedImagePath = imagePath.split('/');
-						const imageName = splittedImagePath[splittedImagePath.length - 1];
-						return tinyPath.includes(imageName);
-					}
-				);
+			aElement.innerHTML = `<img src="${imagePath[0]}" class="preview" loading="lazy" width="20" height="15" alt="preview"/>`
 
-				aElement.innerHTML = `<img src="${tinyImagePath[0]}" class="preview" loading="lazy" width="20" height="15" alt="preview"/>`
+			const likeButton = document.createElement('button');
+			likeButton.innerHTML = '♡';
+			likeButton.classList.add("img");
+			likeButton.setAttribute("id", `${imagePath[0]}`);
 
-				const likeButton = document.createElement('button');
-				likeButton.innerHTML = '♡';
-				likeButton.classList.add("img");
+			const galleryImage = document.createElement('div');
+			galleryImage.classList.add("gallery-image")
+			const imgHolder = document.createElement('div');
+			imgHolder.classList.add("img-holder");
 
-				const galleryImage = document.createElement('div');
-				galleryImage.classList.add("gallery-image")
-				const imgHolder = document.createElement('div');
-				imgHolder.classList.add("img-holder");
-				
-				imgHolder.append(aElement);
-				imgHolder.append(likeButton);
+			imgHolder.append(aElement);
+			imgHolder.append(likeButton);
 
-				galleryImage.append(imgHolder);
+			galleryImage.append(imgHolder);
 
-				document.getElementById("gallery").appendChild(galleryImage);
+			document.getElementById("gallery").appendChild(galleryImage);
+
+			likeButton.addEventListener("click", () => {
+				fetch(`http://localhost:3000/favorite?image=${encodeURIComponent(imagePath[0])}` )
+					.then((response) => {
+						console.log(response);
+						navigator.serviceWorker.ready.then(
+							(serviceWorkerRegistration) => {
+								serviceWorkerRegistration.pushManager.subscribe(
+									{
+										userVisibleOnly: true,
+										applicationServerKey: "BNANPi8bmsrs4-wBjl_Et7dDewZWSHjYKKZuoDvZai1fvnhS282gY_PdYl38DXs4pS-FORfya5jkOs1dMkjpTHY"
+									}
+								).then(_subscription => {
+									console.log(_subscription);
+									Notification.requestPermission(permission => {
+										if (permission === "granted") {
+											const notification = new Notification("You're falling in love");
+										}
+									});
+								});
+							}
+						);
+					})
+					.catch(console.error);
 			})
 		})
+	})
 		.catch(err => {
 			const messageElement = document.createElement("p");
 			messageElement.innerText = err;
 			document.getElementById("gallery").appendChild(messageElement)
-	})
+		})
 };

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75be7d1c-0077-4996-937b-c97379204abb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/assets/imgs/TeamTM-DJ@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/assets/imgs/TeamTM-Fowler@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/assets/imgs/TeamTM-JDay@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/assets/imgs/TeamTM-Rory@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/assets/imgs/TeamTM-Tiger@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/imgs/bordmer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/imgs/ecluse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/imgs/imageDictionary.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/imgs/imageDictionary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/imgs/monte_perdido.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/imgs/pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/imgs/plaine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/imgs/port.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/imgs/tiny/bordmer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/imgs/tiny/ecluse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/imgs/tiny/monte_perdido.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/imgs/tiny/pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/imgs/tiny/plaine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/imgs/tiny/port.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/imgs/tiny/tinyImageDictionary.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scripts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/scripts/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scripts/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/scripts/image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/sw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/imageData.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/imageData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ngrJYfJ4G9Y9R56uy2q57t5b08" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/assets/imgs" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\camil\Downloads\pwa-ynov-main\pwa-ynov-main\client\assets\imgs" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75be7d1c-0077-4996-937b-c97379204abb" name="Default Changelist" comment="" />
+      <created>1611822504132</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611822504132</updated>
+      <workItem from="1611822505205" duration="6742000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1611824545598">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611824545598" />
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1611830025136">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611830025136" />
+  </component>
+</project>

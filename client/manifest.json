@@ -1,6 +1,6 @@
 {
-  "name": "Gallery PWA",
-  "short_name": "Gallery PWA",
+  "name": "Gallerie PGA",
+  "short_name": "Gallerie PGA",
   "start_url": "./",
   "display": "standalone",
   "theme_color": "#317EFB",

@@ -1,11 +1,9 @@
 const BASE_PATH='assets/imgs/';
 
 const imagePaths = [
-    `${BASE_PATH}bordmer.jpg`,
-    `${BASE_PATH}ecluse.jpg`,
-    `${BASE_PATH}monte_perdido.jpg`,
-    `${BASE_PATH}pc.jpg`,
-    `${BASE_PATH}plaine.jpg`,
-    `${BASE_PATH}port.jpg`,
+    `${BASE_PATH}TeamTM-DJ@2x.png`,
+    `${BASE_PATH}TeamTM-Fowler@2x.png`,
+    `${BASE_PATH}TeamTM-JDay@2x.png`,
+    `${BASE_PATH}TeamTM-Rory@2x.png`,
+    `${BASE_PATH}TeamTM-Tiger@2x.png`,
 ];
-console.log(imagePaths);

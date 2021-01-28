@@ -1,8 +1,7 @@
 [
-    {"id": "0", "src": "assets/imgs/port.jpg"},
-    {"id": "1", "src": "assets/imgs/bordmer.jpg"},
-    {"id": "2", "src": "assets/imgs/ecluse.jpg"},
-    {"id": "3", "src": "assets/imgs/monte_perdido.jpg"},
-    {"id": "4", "src": "assets/imgs/pc.jpg"},
-    {"id": "5", "src": "assets/imgs/plaine.jpg"}
+    {"id": "0", "src": "assets/imgs/TeamTM-DJ@2x.png"},
+    {"id": "1", "src": "assets/imgs/TeamTM-Fowler@2x.png"},
+    {"id": "2", "src": "assets/imgs/TeamTM-JDay@2x.png"},
+    {"id": "3", "src": "assets/imgs/TeamTM-Rory@2x.png"},
+    {"id": "4", "src": "assets/imgs/TeamTM-Tiger@2x.png"}
 ]
