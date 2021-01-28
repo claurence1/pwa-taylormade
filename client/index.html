@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>PWA Ynov</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A sandbox app around PWA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#317EFB" />
+    <link rel="apple-touch-icon" href="/assets/icons/icon192.png" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('../sw.js' , {scope: './',})
+          .then(function (reg) {
+            console.log('Registration succeeded. Scope is ' + reg.scope, reg);
+            reg.onupdatefound = (event) => {
+              const installingWorker = reg.installing;
+              installingWorker.onstatechange = () => {
+                switch (installingWorker.state) {
+                  case 'installed':
+                    if (navigator.serviceWorker.controller) {
+                      console.log("update available");
+                      document.getElementById('new-update-message').style.display = "block";
+                    }
+                    break;
+                }
+              };
+            };
+          })
+          .catch(function (error) {
+            console.log('Registration failed with ' + error);
+          });
+      }
+    </script>
+    <script src="scripts/app.js"></script>
+    <script src="assets/imgs/imageDictionary.js"></script>
+    <script src="assets/imgs/tiny/tinyImageDictionary.js"></script>
+    <script src="scripts/image.js"></script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.9/pwacompat.min.js"
+      integrity="sha384-VcI6S+HIsE80FVM1jgbd6WDFhzKYA0PecD/LcIyMQpT4fMJdijBh0I7Iblaacawc"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js"></script>
+  </head>
+
+  <body>
+    <div class="app-header">
+      <h1>Sandbox PWA Ynov</h1>
+    </div>
+    <div class="app-info">
+      <button id="install_button" type="button" value="Install">Install</button>
+      <h2 id="new-update-message" style="display: none">Your favorite gallery have a new version, Please reload !</h2>
+      <p id="offline-message" style="display: none">
+        You're now in offline mode
+      </p>
+    </div>
+    <div id="gallery"></div>
+  </body>
+</html>
